@@ -46,7 +46,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW `switchboard category`
 AS
-	select `1101-ban_dh`.`switchboard category`.`CatID` AS `CatID`,`1101-ban_dh`.`switchboard category`.`PassID` AS `PassID`,`1101-ban_dh`.`switchboard category`.`SwitchboardID` AS `SwitchboardID`,`1101-ban_dh`.`switchboard category`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`switchboard category`;
+	select `1202-was_am`.`switchboard category`.`CatID` AS `CatID`,`1202-was_am`.`switchboard category`.`PassID` AS `PassID`,`1202-was_am`.`switchboard category`.`SwitchboardID` AS `SwitchboardID`,`1202-was_am`.`switchboard category`.`UpdateID` AS `UpdateID` from `1202-was_am`.`switchboard category`;
 
 --
 -- Definition for view `switchboard item`
@@ -55,7 +55,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW `switchboard item`
 AS
-	select `1101-ban_dh`.`switchboard item`.`ID` AS `ID`,`1101-ban_dh`.`switchboard item`.`CatID` AS `CatID`,`1101-ban_dh`.`switchboard item`.`SwitchboardID` AS `SwitchboardID`,`1101-ban_dh`.`switchboard item`.`ItemNumber` AS `ItemNumber`,`1101-ban_dh`.`switchboard item`.`Command` AS `Command`,`1101-ban_dh`.`switchboard item`.`Argument` AS `Argument`,`1101-ban_dh`.`switchboard item`.`ItemID` AS `ItemID`,`1101-ban_dh`.`switchboard item`.`Open` AS `Open`,`1101-ban_dh`.`switchboard item`.`PassID` AS `PassID`,`1101-ban_dh`.`switchboard item`.`UpdateID` AS `UpdateID`,`1101-ban_dh`.`switchboard item`.`Show` AS `Show` from `1101-ban_dh`.`switchboard item`;
+	select `1202-was_am`.`switchboard item`.`ID` AS `ID`,`1202-was_am`.`switchboard item`.`CatID` AS `CatID`,`1202-was_am`.`switchboard item`.`SwitchboardID` AS `SwitchboardID`,`1202-was_am`.`switchboard item`.`ItemNumber` AS `ItemNumber`,`1202-was_am`.`switchboard item`.`Command` AS `Command`,`1202-was_am`.`switchboard item`.`Argument` AS `Argument`,`1202-was_am`.`switchboard item`.`ItemID` AS `ItemID`,`1202-was_am`.`switchboard item`.`Open` AS `Open`,`1202-was_am`.`switchboard item`.`PassID` AS `PassID`,`1202-was_am`.`switchboard item`.`UpdateID` AS `UpdateID`,`1202-was_am`.`switchboard item`.`Show` AS `Show` from `1202-was_am`.`switchboard item`;
 
 --
 -- Definition for view `switchboard pass`
@@ -64,7 +64,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW `switchboard pass`
 AS
-	select `1101-ban_dh`.`switchboard pass`.`PassID` AS `PassID`,`1101-ban_dh`.`switchboard pass`.`Pass` AS `Pass`,`1101-ban_dh`.`switchboard pass`.`Cashier` AS `Cashier`,`1101-ban_dh`.`switchboard pass`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`switchboard pass`.`IDTemp` AS `IDTemp`,`1101-ban_dh`.`switchboard pass`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`switchboard pass`;
+	select `1202-was_am`.`switchboard pass`.`PassID` AS `PassID`,`1202-was_am`.`switchboard pass`.`Pass` AS `Pass`,`1202-was_am`.`switchboard pass`.`Cashier` AS `Cashier`,`1202-was_am`.`switchboard pass`.`IDPaid` AS `IDPaid`,`1202-was_am`.`switchboard pass`.`IDTemp` AS `IDTemp`,`1202-was_am`.`switchboard pass`.`UpdateID` AS `UpdateID` from `1202-was_am`.`switchboard pass`;
 
 --
 -- Definition for view capital_asset
@@ -73,7 +73,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_asset
 AS
-	select `1101-ban_dh`.`capital_asset`.`IDAsset` AS `IDAsset`,`1101-ban_dh`.`capital_asset`.`Category` AS `Category`,`1101-ban_dh`.`capital_asset`.`Out` AS `Out`,`1101-ban_dh`.`capital_asset`.`IN` AS `IN`,`1101-ban_dh`.`capital_asset`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_asset`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_asset`.`Growth` AS `Growth`,`1101-ban_dh`.`capital_asset`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_asset`;
+	select `1202-was_am`.`capital_asset`.`IDAsset` AS `IDAsset`,`1202-was_am`.`capital_asset`.`Category` AS `Category`,`1202-was_am`.`capital_asset`.`Out` AS `Out`,`1202-was_am`.`capital_asset`.`IN` AS `IN`,`1202-was_am`.`capital_asset`.`Amount` AS `Amount`,`1202-was_am`.`capital_asset`.`Paid` AS `Paid`,`1202-was_am`.`capital_asset`.`Growth` AS `Growth`,`1202-was_am`.`capital_asset`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_asset`;
 
 --
 -- Definition for view capital_assetsub
@@ -82,7 +82,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_assetsub
 AS
-	select `1101-ban_dh`.`capital_assetsub`.`IDAssetSub` AS `IDAssetSub`,`1101-ban_dh`.`capital_assetsub`.`IDAsset` AS `IDAsset`,`1101-ban_dh`.`capital_assetsub`.`IDDate` AS `IDDate`,`1101-ban_dh`.`capital_assetsub`.`Description` AS `Description`,`1101-ban_dh`.`capital_assetsub`.`Out` AS `Out`,`1101-ban_dh`.`capital_assetsub`.`IN` AS `IN`,`1101-ban_dh`.`capital_assetsub`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_assetsub`.`Growth` AS `Growth`,`1101-ban_dh`.`capital_assetsub`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_assetsub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`capital_assetsub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_assetsub`;
+	select `1202-was_am`.`capital_assetsub`.`IDAssetSub` AS `IDAssetSub`,`1202-was_am`.`capital_assetsub`.`IDAsset` AS `IDAsset`,`1202-was_am`.`capital_assetsub`.`IDDate` AS `IDDate`,`1202-was_am`.`capital_assetsub`.`Description` AS `Description`,`1202-was_am`.`capital_assetsub`.`Out` AS `Out`,`1202-was_am`.`capital_assetsub`.`IN` AS `IN`,`1202-was_am`.`capital_assetsub`.`Amount` AS `Amount`,`1202-was_am`.`capital_assetsub`.`Growth` AS `Growth`,`1202-was_am`.`capital_assetsub`.`Paid` AS `Paid`,`1202-was_am`.`capital_assetsub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`capital_assetsub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_assetsub`;
 
 --
 -- Definition for view capital_deposit
@@ -91,7 +91,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_deposit
 AS
-	select `1101-ban_dh`.`capital_deposit`.`IDDeposit` AS `IDDeposit`,`1101-ban_dh`.`capital_deposit`.`IDDate` AS `IDDate`,`1101-ban_dh`.`capital_deposit`.`IDResources` AS `IDResources`,`1101-ban_dh`.`capital_deposit`.`IDDescription` AS `IDDescription`,`1101-ban_dh`.`capital_deposit`.`IN` AS `IN`,`1101-ban_dh`.`capital_deposit`.`Out` AS `Out`,`1101-ban_dh`.`capital_deposit`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_deposit`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`capital_deposit`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_deposit`;
+	select `1202-was_am`.`capital_deposit`.`IDDeposit` AS `IDDeposit`,`1202-was_am`.`capital_deposit`.`IDDate` AS `IDDate`,`1202-was_am`.`capital_deposit`.`IDResources` AS `IDResources`,`1202-was_am`.`capital_deposit`.`IDDescription` AS `IDDescription`,`1202-was_am`.`capital_deposit`.`IN` AS `IN`,`1202-was_am`.`capital_deposit`.`Out` AS `Out`,`1202-was_am`.`capital_deposit`.`Paid` AS `Paid`,`1202-was_am`.`capital_deposit`.`IDCashier` AS `IDCashier`,`1202-was_am`.`capital_deposit`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_deposit`;
 
 --
 -- Definition for view capital_deposit_desciption
@@ -109,7 +109,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_equity
 AS
-	select `1101-ban_dh`.`capital_equity`.`IDEquity` AS `IDEquity`,`1101-ban_dh`.`capital_equity`.`IDResources` AS `IDResources`,`1101-ban_dh`.`capital_equity`.`IN` AS `IN`,`1101-ban_dh`.`capital_equity`.`Out` AS `Out`,`1101-ban_dh`.`capital_equity`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_equity`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_equity`;
+	select `1202-was_am`.`capital_equity`.`IDEquity` AS `IDEquity`,`1202-was_am`.`capital_equity`.`IDResources` AS `IDResources`,`1202-was_am`.`capital_equity`.`IN` AS `IN`,`1202-was_am`.`capital_equity`.`Out` AS `Out`,`1202-was_am`.`capital_equity`.`Amount` AS `Amount`,`1202-was_am`.`capital_equity`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_equity`;
 
 --
 -- Definition for view capital_equitysub
@@ -118,7 +118,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_equitysub
 AS
-	select `1101-ban_dh`.`capital_equitysub`.`IDEquitySub` AS `IDEquitySub`,`1101-ban_dh`.`capital_equitysub`.`IDEquity` AS `IDEquity`,`1101-ban_dh`.`capital_equitysub`.`IDDate` AS `IDDate`,`1101-ban_dh`.`capital_equitysub`.`Description` AS `Description`,`1101-ban_dh`.`capital_equitysub`.`Out` AS `Out`,`1101-ban_dh`.`capital_equitysub`.`IN` AS `IN`,`1101-ban_dh`.`capital_equitysub`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_equitysub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`capital_equitysub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`capital_equitysub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_equitysub`;
+	select `1202-was_am`.`capital_equitysub`.`IDEquitySub` AS `IDEquitySub`,`1202-was_am`.`capital_equitysub`.`IDEquity` AS `IDEquity`,`1202-was_am`.`capital_equitysub`.`IDDate` AS `IDDate`,`1202-was_am`.`capital_equitysub`.`Description` AS `Description`,`1202-was_am`.`capital_equitysub`.`Out` AS `Out`,`1202-was_am`.`capital_equitysub`.`IN` AS `IN`,`1202-was_am`.`capital_equitysub`.`Paid` AS `Paid`,`1202-was_am`.`capital_equitysub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`capital_equitysub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`capital_equitysub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_equitysub`;
 
 --
 -- Definition for view capital_expense
@@ -127,7 +127,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_expense
 AS
-	select `1101-ban_dh`.`capital_expense`.`IDExpense` AS `IDExpense`,`1101-ban_dh`.`capital_expense`.`Category` AS `Category`,`1101-ban_dh`.`capital_expense`.`Out` AS `Out`,`1101-ban_dh`.`capital_expense`.`IN` AS `IN`,`1101-ban_dh`.`capital_expense`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_expense`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_expense`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_expense`;
+	select `1202-was_am`.`capital_expense`.`IDExpense` AS `IDExpense`,`1202-was_am`.`capital_expense`.`Category` AS `Category`,`1202-was_am`.`capital_expense`.`Out` AS `Out`,`1202-was_am`.`capital_expense`.`IN` AS `IN`,`1202-was_am`.`capital_expense`.`Amount` AS `Amount`,`1202-was_am`.`capital_expense`.`Paid` AS `Paid`,`1202-was_am`.`capital_expense`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_expense`;
 
 --
 -- Definition for view capital_expensesub
@@ -136,7 +136,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_expensesub
 AS
-	select `1101-ban_dh`.`capital_expensesub`.`IDExpenseSub` AS `IDExpenseSub`,`1101-ban_dh`.`capital_expensesub`.`IDExpense` AS `IDExpense`,`1101-ban_dh`.`capital_expensesub`.`IDDate` AS `IDDate`,`1101-ban_dh`.`capital_expensesub`.`Description` AS `Description`,`1101-ban_dh`.`capital_expensesub`.`Out` AS `Out`,`1101-ban_dh`.`capital_expensesub`.`IN` AS `IN`,`1101-ban_dh`.`capital_expensesub`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_expensesub`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_expensesub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`capital_expensesub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`capital_expensesub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_expensesub`;
+	select `1202-was_am`.`capital_expensesub`.`IDExpenseSub` AS `IDExpenseSub`,`1202-was_am`.`capital_expensesub`.`IDExpense` AS `IDExpense`,`1202-was_am`.`capital_expensesub`.`IDDate` AS `IDDate`,`1202-was_am`.`capital_expensesub`.`Description` AS `Description`,`1202-was_am`.`capital_expensesub`.`Out` AS `Out`,`1202-was_am`.`capital_expensesub`.`IN` AS `IN`,`1202-was_am`.`capital_expensesub`.`Amount` AS `Amount`,`1202-was_am`.`capital_expensesub`.`Paid` AS `Paid`,`1202-was_am`.`capital_expensesub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`capital_expensesub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`capital_expensesub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_expensesub`;
 
 --
 -- Definition for view capital_liability
@@ -145,7 +145,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_liability
 AS
-	select `1101-ban_dh`.`capital_liability`.`IDLiability` AS `IDLiability`,`1101-ban_dh`.`capital_liability`.`Name` AS `Name`,`1101-ban_dh`.`capital_liability`.`IN` AS `IN`,`1101-ban_dh`.`capital_liability`.`Out` AS `Out`,`1101-ban_dh`.`capital_liability`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_liability`.`Extra` AS `Extra`,`1101-ban_dh`.`capital_liability`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_liability`;
+	select `1202-was_am`.`capital_liability`.`IDLiability` AS `IDLiability`,`1202-was_am`.`capital_liability`.`Name` AS `Name`,`1202-was_am`.`capital_liability`.`IN` AS `IN`,`1202-was_am`.`capital_liability`.`Out` AS `Out`,`1202-was_am`.`capital_liability`.`Amount` AS `Amount`,`1202-was_am`.`capital_liability`.`Extra` AS `Extra`,`1202-was_am`.`capital_liability`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_liability`;
 
 --
 -- Definition for view capital_liabilitysub
@@ -154,7 +154,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_liabilitysub
 AS
-	select `1101-ban_dh`.`capital_liabilitysub`.`IDLiabilitySub` AS `IDLiabilitySub`,`1101-ban_dh`.`capital_liabilitysub`.`IDLiability` AS `IDLiability`,`1101-ban_dh`.`capital_liabilitysub`.`IDDate` AS `IDDate`,`1101-ban_dh`.`capital_liabilitysub`.`Description` AS `Description`,`1101-ban_dh`.`capital_liabilitysub`.`IN` AS `IN`,`1101-ban_dh`.`capital_liabilitysub`.`Out` AS `Out`,`1101-ban_dh`.`capital_liabilitysub`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_liabilitysub`.`Extra` AS `Extra`,`1101-ban_dh`.`capital_liabilitysub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`capital_liabilitysub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`capital_liabilitysub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_liabilitysub`;
+	select `1202-was_am`.`capital_liabilitysub`.`IDLiabilitySub` AS `IDLiabilitySub`,`1202-was_am`.`capital_liabilitysub`.`IDLiability` AS `IDLiability`,`1202-was_am`.`capital_liabilitysub`.`IDDate` AS `IDDate`,`1202-was_am`.`capital_liabilitysub`.`Description` AS `Description`,`1202-was_am`.`capital_liabilitysub`.`IN` AS `IN`,`1202-was_am`.`capital_liabilitysub`.`Out` AS `Out`,`1202-was_am`.`capital_liabilitysub`.`Paid` AS `Paid`,`1202-was_am`.`capital_liabilitysub`.`Extra` AS `Extra`,`1202-was_am`.`capital_liabilitysub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`capital_liabilitysub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`capital_liabilitysub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_liabilitysub`;
 
 --
 -- Definition for view capital_opening
@@ -163,7 +163,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_opening
 AS
-	select `1101-ban_dh`.`capital_opening`.`IDOpening` AS `IDOpening`,`1101-ban_dh`.`capital_opening`.`Category` AS `Category`,`1101-ban_dh`.`capital_opening`.`IN` AS `IN`,`1101-ban_dh`.`capital_opening`.`Out` AS `Out`,`1101-ban_dh`.`capital_opening`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_opening`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_opening`;
+	select `1202-was_am`.`capital_opening`.`IDOpening` AS `IDOpening`,`1202-was_am`.`capital_opening`.`Category` AS `Category`,`1202-was_am`.`capital_opening`.`IN` AS `IN`,`1202-was_am`.`capital_opening`.`Out` AS `Out`,`1202-was_am`.`capital_opening`.`Amount` AS `Amount`,`1202-was_am`.`capital_opening`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_opening`;
 
 --
 -- Definition for view capital_openingsub
@@ -172,7 +172,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_openingsub
 AS
-	select `1101-ban_dh`.`capital_openingsub`.`IDOpeningSub` AS `IDOpeningSub`,`1101-ban_dh`.`capital_openingsub`.`IDOpening` AS `IDOpening`,`1101-ban_dh`.`capital_openingsub`.`IDDate` AS `IDDate`,`1101-ban_dh`.`capital_openingsub`.`Description` AS `Description`,`1101-ban_dh`.`capital_openingsub`.`Out` AS `Out`,`1101-ban_dh`.`capital_openingsub`.`IN` AS `IN`,`1101-ban_dh`.`capital_openingsub`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_openingsub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`capital_openingsub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`capital_openingsub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_openingsub`;
+	select `1202-was_am`.`capital_openingsub`.`IDOpeningSub` AS `IDOpeningSub`,`1202-was_am`.`capital_openingsub`.`IDOpening` AS `IDOpening`,`1202-was_am`.`capital_openingsub`.`IDDate` AS `IDDate`,`1202-was_am`.`capital_openingsub`.`Description` AS `Description`,`1202-was_am`.`capital_openingsub`.`Out` AS `Out`,`1202-was_am`.`capital_openingsub`.`IN` AS `IN`,`1202-was_am`.`capital_openingsub`.`Paid` AS `Paid`,`1202-was_am`.`capital_openingsub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`capital_openingsub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`capital_openingsub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_openingsub`;
 
 --
 -- Definition for view capital_partner
@@ -181,7 +181,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_partner
 AS
-	select `1101-ban_dh`.`capital_partner`.`IDPartner` AS `IDPartner`,`1101-ban_dh`.`capital_partner`.`IDResources` AS `IDResources`,`1101-ban_dh`.`capital_partner`.`IN` AS `IN`,`1101-ban_dh`.`capital_partner`.`Out` AS `Out`,`1101-ban_dh`.`capital_partner`.`Amount` AS `Amount`,`1101-ban_dh`.`capital_partner`.`Partnership` AS `Partnership`,`1101-ban_dh`.`capital_partner`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_partner`;
+	select `1202-was_am`.`capital_partner`.`IDPartner` AS `IDPartner`,`1202-was_am`.`capital_partner`.`IDResources` AS `IDResources`,`1202-was_am`.`capital_partner`.`IN` AS `IN`,`1202-was_am`.`capital_partner`.`Out` AS `Out`,`1202-was_am`.`capital_partner`.`Amount` AS `Amount`,`1202-was_am`.`capital_partner`.`Partnership` AS `Partnership`,`1202-was_am`.`capital_partner`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_partner`;
 
 --
 -- Definition for view capital_partnersub
@@ -190,7 +190,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW capital_partnersub
 AS
-	select `1101-ban_dh`.`capital_partnersub`.`IDPartnerSub` AS `IDPartnerSub`,`1101-ban_dh`.`capital_partnersub`.`IDPartner` AS `IDPartner`,`1101-ban_dh`.`capital_partnersub`.`IDDate` AS `IDDate`,`1101-ban_dh`.`capital_partnersub`.`Description` AS `Description`,`1101-ban_dh`.`capital_partnersub`.`Out` AS `Out`,`1101-ban_dh`.`capital_partnersub`.`IN` AS `IN`,`1101-ban_dh`.`capital_partnersub`.`Paid` AS `Paid`,`1101-ban_dh`.`capital_partnersub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`capital_partnersub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`capital_partnersub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`capital_partnersub`;
+	select `1202-was_am`.`capital_partnersub`.`IDPartnerSub` AS `IDPartnerSub`,`1202-was_am`.`capital_partnersub`.`IDPartner` AS `IDPartner`,`1202-was_am`.`capital_partnersub`.`IDDate` AS `IDDate`,`1202-was_am`.`capital_partnersub`.`Description` AS `Description`,`1202-was_am`.`capital_partnersub`.`Out` AS `Out`,`1202-was_am`.`capital_partnersub`.`IN` AS `IN`,`1202-was_am`.`capital_partnersub`.`Paid` AS `Paid`,`1202-was_am`.`capital_partnersub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`capital_partnersub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`capital_partnersub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`capital_partnersub`;
 
 --
 -- Definition for view cash_capital_assetsub
@@ -199,7 +199,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_capital_assetsub
 AS
-	select `1101-ban_dh`.`cash_capital_assetsub`.`IDCashAssetSub` AS `IDCashAssetSub`,`1101-ban_dh`.`cash_capital_assetsub`.`IDAssetSub` AS `IDAssetSub`,`1101-ban_dh`.`cash_capital_assetsub`.`IDAsset` AS `IDAsset`,`1101-ban_dh`.`cash_capital_assetsub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_capital_assetsub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_capital_assetsub`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_capital_assetsub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_capital_assetsub`;
+	select `1202-was_am`.`cash_capital_assetsub`.`IDCashAssetSub` AS `IDCashAssetSub`,`1202-was_am`.`cash_capital_assetsub`.`IDAssetSub` AS `IDAssetSub`,`1202-was_am`.`cash_capital_assetsub`.`IDAsset` AS `IDAsset`,`1202-was_am`.`cash_capital_assetsub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_capital_assetsub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_capital_assetsub`.`Paid` AS `Paid`,`1202-was_am`.`cash_capital_assetsub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_capital_assetsub`;
 
 --
 -- Definition for view cash_capital_deposit
@@ -208,7 +208,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_capital_deposit
 AS
-	select `1101-ban_dh`.`cash_capital_deposit`.`IDCashDeposit` AS `IDCashDeposit`,`1101-ban_dh`.`cash_capital_deposit`.`IDDeposit` AS `IDDeposit`,`1101-ban_dh`.`cash_capital_deposit`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_capital_deposit`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_capital_deposit`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_capital_deposit`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_capital_deposit`;
+	select `1202-was_am`.`cash_capital_deposit`.`IDCashDeposit` AS `IDCashDeposit`,`1202-was_am`.`cash_capital_deposit`.`IDDeposit` AS `IDDeposit`,`1202-was_am`.`cash_capital_deposit`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_capital_deposit`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_capital_deposit`.`Paid` AS `Paid`,`1202-was_am`.`cash_capital_deposit`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_capital_deposit`;
 
 --
 -- Definition for view cash_capital_equitysub
@@ -217,7 +217,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_capital_equitysub
 AS
-	select `1101-ban_dh`.`cash_capital_equitysub`.`IDCashEquitySub` AS `IDCashEquitySub`,`1101-ban_dh`.`cash_capital_equitysub`.`IDEquitySub` AS `IDEquitySub`,`1101-ban_dh`.`cash_capital_equitysub`.`IDEquity` AS `IDEquity`,`1101-ban_dh`.`cash_capital_equitysub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_capital_equitysub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_capital_equitysub`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_capital_equitysub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_capital_equitysub`;
+	select `1202-was_am`.`cash_capital_equitysub`.`IDCashEquitySub` AS `IDCashEquitySub`,`1202-was_am`.`cash_capital_equitysub`.`IDEquitySub` AS `IDEquitySub`,`1202-was_am`.`cash_capital_equitysub`.`IDEquity` AS `IDEquity`,`1202-was_am`.`cash_capital_equitysub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_capital_equitysub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_capital_equitysub`.`Paid` AS `Paid`,`1202-was_am`.`cash_capital_equitysub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_capital_equitysub`;
 
 --
 -- Definition for view cash_capital_expensesub
@@ -226,7 +226,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_capital_expensesub
 AS
-	select `1101-ban_dh`.`cash_capital_expensesub`.`IDCashExpenseSub` AS `IDCashExpenseSub`,`1101-ban_dh`.`cash_capital_expensesub`.`IDExpenseSub` AS `IDExpenseSub`,`1101-ban_dh`.`cash_capital_expensesub`.`IDExpense` AS `IDExpense`,`1101-ban_dh`.`cash_capital_expensesub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_capital_expensesub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_capital_expensesub`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_capital_expensesub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_capital_expensesub`;
+	select `1202-was_am`.`cash_capital_expensesub`.`IDCashExpenseSub` AS `IDCashExpenseSub`,`1202-was_am`.`cash_capital_expensesub`.`IDExpenseSub` AS `IDExpenseSub`,`1202-was_am`.`cash_capital_expensesub`.`IDExpense` AS `IDExpense`,`1202-was_am`.`cash_capital_expensesub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_capital_expensesub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_capital_expensesub`.`Paid` AS `Paid`,`1202-was_am`.`cash_capital_expensesub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_capital_expensesub`;
 
 --
 -- Definition for view cash_capital_liabilitysub
@@ -235,7 +235,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_capital_liabilitysub
 AS
-	select `1101-ban_dh`.`cash_capital_liabilitysub`.`IDCashLiabilitySub` AS `IDCashLiabilitySub`,`1101-ban_dh`.`cash_capital_liabilitysub`.`IDLiabilitySub` AS `IDLiabilitySub`,`1101-ban_dh`.`cash_capital_liabilitysub`.`IDLiability` AS `IDLiability`,`1101-ban_dh`.`cash_capital_liabilitysub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_capital_liabilitysub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_capital_liabilitysub`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_capital_liabilitysub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_capital_liabilitysub`;
+	select `1202-was_am`.`cash_capital_liabilitysub`.`IDCashLiabilitySub` AS `IDCashLiabilitySub`,`1202-was_am`.`cash_capital_liabilitysub`.`IDLiabilitySub` AS `IDLiabilitySub`,`1202-was_am`.`cash_capital_liabilitysub`.`IDLiability` AS `IDLiability`,`1202-was_am`.`cash_capital_liabilitysub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_capital_liabilitysub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_capital_liabilitysub`.`Paid` AS `Paid`,`1202-was_am`.`cash_capital_liabilitysub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_capital_liabilitysub`;
 
 --
 -- Definition for view cash_capital_openingsub
@@ -244,7 +244,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_capital_openingsub
 AS
-	select `1101-ban_dh`.`cash_capital_openingsub`.`IDCashOpeningSub` AS `IDCashOpeningSub`,`1101-ban_dh`.`cash_capital_openingsub`.`IDOpeningSub` AS `IDOpeningSub`,`1101-ban_dh`.`cash_capital_openingsub`.`IDOpening` AS `IDOpening`,`1101-ban_dh`.`cash_capital_openingsub`.`Description` AS `Description`,`1101-ban_dh`.`cash_capital_openingsub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_capital_openingsub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_capital_openingsub`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_capital_openingsub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_capital_openingsub`;
+	select `1202-was_am`.`cash_capital_openingsub`.`IDCashOpeningSub` AS `IDCashOpeningSub`,`1202-was_am`.`cash_capital_openingsub`.`IDOpeningSub` AS `IDOpeningSub`,`1202-was_am`.`cash_capital_openingsub`.`IDOpening` AS `IDOpening`,`1202-was_am`.`cash_capital_openingsub`.`Description` AS `Description`,`1202-was_am`.`cash_capital_openingsub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_capital_openingsub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_capital_openingsub`.`Paid` AS `Paid`,`1202-was_am`.`cash_capital_openingsub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_capital_openingsub`;
 
 --
 -- Definition for view cash_capital_partnersub
@@ -253,7 +253,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_capital_partnersub
 AS
-	select `1101-ban_dh`.`cash_capital_partnersub`.`IDCashPartnerSub` AS `IDCashPartnerSub`,`1101-ban_dh`.`cash_capital_partnersub`.`IDPartnerSub` AS `IDPartnerSub`,`1101-ban_dh`.`cash_capital_partnersub`.`IDPartner` AS `IDPartner`,`1101-ban_dh`.`cash_capital_partnersub`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_capital_partnersub`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_capital_partnersub`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_capital_partnersub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_capital_partnersub`;
+	select `1202-was_am`.`cash_capital_partnersub`.`IDCashPartnerSub` AS `IDCashPartnerSub`,`1202-was_am`.`cash_capital_partnersub`.`IDPartnerSub` AS `IDPartnerSub`,`1202-was_am`.`cash_capital_partnersub`.`IDPartner` AS `IDPartner`,`1202-was_am`.`cash_capital_partnersub`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_capital_partnersub`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_capital_partnersub`.`Paid` AS `Paid`,`1202-was_am`.`cash_capital_partnersub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_capital_partnersub`;
 
 --
 -- Definition for view cash_exp_daily
@@ -262,7 +262,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_exp_daily
 AS
-	select `1101-ban_dh`.`cash_exp_daily`.`IDCashDaily` AS `IDCashDaily`,`1101-ban_dh`.`cash_exp_daily`.`IDDaily` AS `IDDaily`,`1101-ban_dh`.`cash_exp_daily`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_exp_daily`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_exp_daily`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_exp_daily`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_exp_daily`;
+	select `1202-was_am`.`cash_exp_daily`.`IDCashDaily` AS `IDCashDaily`,`1202-was_am`.`cash_exp_daily`.`IDDaily` AS `IDDaily`,`1202-was_am`.`cash_exp_daily`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_exp_daily`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_exp_daily`.`Paid` AS `Paid`,`1202-was_am`.`cash_exp_daily`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_exp_daily`;
 
 --
 -- Definition for view cash_exp_house
@@ -271,7 +271,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_exp_house
 AS
-	select `1101-ban_dh`.`cash_exp_house`.`IDCashHouse` AS `IDCashHouse`,`1101-ban_dh`.`cash_exp_house`.`IDHouse` AS `IDHouse`,`1101-ban_dh`.`cash_exp_house`.`FCurrency` AS `FCurrency`,`1101-ban_dh`.`cash_exp_house`.`XRate` AS `XRate`,`1101-ban_dh`.`cash_exp_house`.`XFees` AS `XFees`,`1101-ban_dh`.`cash_exp_house`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_exp_house`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_exp_house`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_exp_house`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_exp_house`;
+	select `1202-was_am`.`cash_exp_house`.`IDCashHouse` AS `IDCashHouse`,`1202-was_am`.`cash_exp_house`.`IDHouse` AS `IDHouse`,`1202-was_am`.`cash_exp_house`.`FCurrency` AS `FCurrency`,`1202-was_am`.`cash_exp_house`.`XRate` AS `XRate`,`1202-was_am`.`cash_exp_house`.`XFees` AS `XFees`,`1202-was_am`.`cash_exp_house`.`Paid` AS `Paid`,`1202-was_am`.`cash_exp_house`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_exp_house`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_exp_house`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_exp_house`;
 
 --
 -- Definition for view cash_exp_monthlypaid
@@ -280,7 +280,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_exp_monthlypaid
 AS
-	select `1101-ban_dh`.`cash_exp_monthlypaid`.`IDCashMonthlyPaid` AS `IDCashMonthlyPaid`,`1101-ban_dh`.`cash_exp_monthlypaid`.`IDMonthlyPaid` AS `IDMonthlyPaid`,`1101-ban_dh`.`cash_exp_monthlypaid`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_exp_monthlypaid`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_exp_monthlypaid`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_exp_monthlypaid`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_exp_monthlypaid`;
+	select `1202-was_am`.`cash_exp_monthlypaid`.`IDCashMonthlyPaid` AS `IDCashMonthlyPaid`,`1202-was_am`.`cash_exp_monthlypaid`.`IDMonthlyPaid` AS `IDMonthlyPaid`,`1202-was_am`.`cash_exp_monthlypaid`.`Paid` AS `Paid`,`1202-was_am`.`cash_exp_monthlypaid`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_exp_monthlypaid`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_exp_monthlypaid`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_exp_monthlypaid`;
 
 --
 -- Definition for view cash_exp_yearly
@@ -289,7 +289,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_exp_yearly
 AS
-	select `1101-ban_dh`.`cash_exp_yearly`.`IDCashYearly` AS `IDCashYearly`,`1101-ban_dh`.`cash_exp_yearly`.`IDYearly` AS `IDYearly`,`1101-ban_dh`.`cash_exp_yearly`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_exp_yearly`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_exp_yearly`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_exp_yearly`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_exp_yearly`;
+	select `1202-was_am`.`cash_exp_yearly`.`IDCashYearly` AS `IDCashYearly`,`1202-was_am`.`cash_exp_yearly`.`IDYearly` AS `IDYearly`,`1202-was_am`.`cash_exp_yearly`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_exp_yearly`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_exp_yearly`.`Paid` AS `Paid`,`1202-was_am`.`cash_exp_yearly`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_exp_yearly`;
 
 --
 -- Definition for view cash_purch_bulksale_purchase
@@ -298,7 +298,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_purch_bulksale_purchase
 AS
-	select `1101-ban_dh`.`cash_purch_bulksale_purchase`.`IDCashBulkPurchase` AS `IDCashBulkPurchase`,`1101-ban_dh`.`cash_purch_bulksale_purchase`.`IDBulkPurchase` AS `IDBulkPurchase`,`1101-ban_dh`.`cash_purch_bulksale_purchase`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_purch_bulksale_purchase`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_purch_bulksale_purchase`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_purch_bulksale_purchase`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_purch_bulksale_purchase`;
+	select `1202-was_am`.`cash_purch_bulksale_purchase`.`IDCashBulkPurchase` AS `IDCashBulkPurchase`,`1202-was_am`.`cash_purch_bulksale_purchase`.`IDBulkPurchase` AS `IDBulkPurchase`,`1202-was_am`.`cash_purch_bulksale_purchase`.`Paid` AS `Paid`,`1202-was_am`.`cash_purch_bulksale_purchase`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_purch_bulksale_purchase`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_purch_bulksale_purchase`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_purch_bulksale_purchase`;
 
 --
 -- Definition for view cash_purch_sale_purchase
@@ -307,7 +307,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_purch_sale_purchase
 AS
-	select `1101-ban_dh`.`cash_purch_sale_purchase`.`IDCashSalePurchase` AS `IDCashSalePurchase`,`1101-ban_dh`.`cash_purch_sale_purchase`.`IDSalePurchase` AS `IDSalePurchase`,`1101-ban_dh`.`cash_purch_sale_purchase`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_purch_sale_purchase`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_purch_sale_purchase`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_purch_sale_purchase`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_purch_sale_purchase`;
+	select `1202-was_am`.`cash_purch_sale_purchase`.`IDCashSalePurchase` AS `IDCashSalePurchase`,`1202-was_am`.`cash_purch_sale_purchase`.`IDSalePurchase` AS `IDSalePurchase`,`1202-was_am`.`cash_purch_sale_purchase`.`Paid` AS `Paid`,`1202-was_am`.`cash_purch_sale_purchase`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_purch_sale_purchase`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_purch_sale_purchase`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_purch_sale_purchase`;
 
 --
 -- Definition for view cash_purch_work_purchase
@@ -316,7 +316,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_purch_work_purchase
 AS
-	select `1101-ban_dh`.`cash_purch_work_purchase`.`IDCashWorkPurchase` AS `IDCashWorkPurchase`,`1101-ban_dh`.`cash_purch_work_purchase`.`IDWorkPurchase` AS `IDWorkPurchase`,`1101-ban_dh`.`cash_purch_work_purchase`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_purch_work_purchase`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_purch_work_purchase`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_purch_work_purchase`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_purch_work_purchase`;
+	select `1202-was_am`.`cash_purch_work_purchase`.`IDCashWorkPurchase` AS `IDCashWorkPurchase`,`1202-was_am`.`cash_purch_work_purchase`.`IDWorkPurchase` AS `IDWorkPurchase`,`1202-was_am`.`cash_purch_work_purchase`.`Paid` AS `Paid`,`1202-was_am`.`cash_purch_work_purchase`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_purch_work_purchase`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_purch_work_purchase`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_purch_work_purchase`;
 
 --
 -- Definition for view cash_sale_bulksale
@@ -325,7 +325,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_sale_bulksale
 AS
-	select `1101-ban_dh`.`cash_sale_bulksale`.`IDCashBulkSale` AS `IDCashBulkSale`,`1101-ban_dh`.`cash_sale_bulksale`.`IDBulkSale` AS `IDBulkSale`,`1101-ban_dh`.`cash_sale_bulksale`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_sale_bulksale`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_sale_bulksale`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_sale_bulksale`.`Discount` AS `Discount`,`1101-ban_dh`.`cash_sale_bulksale`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_sale_bulksale`;
+	select `1202-was_am`.`cash_sale_bulksale`.`IDCashBulkSale` AS `IDCashBulkSale`,`1202-was_am`.`cash_sale_bulksale`.`IDBulkSale` AS `IDBulkSale`,`1202-was_am`.`cash_sale_bulksale`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_sale_bulksale`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_sale_bulksale`.`Paid` AS `Paid`,`1202-was_am`.`cash_sale_bulksale`.`Discount` AS `Discount`,`1202-was_am`.`cash_sale_bulksale`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_sale_bulksale`;
 
 --
 -- Definition for view cash_sale_sale
@@ -334,7 +334,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_sale_sale
 AS
-	select `1101-ban_dh`.`cash_sale_sale`.`IDCashSale` AS `IDCashSale`,`1101-ban_dh`.`cash_sale_sale`.`IDSale` AS `IDSale`,`1101-ban_dh`.`cash_sale_sale`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_sale_sale`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_sale_sale`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_sale_sale`.`Discount` AS `Discount`,`1101-ban_dh`.`cash_sale_sale`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_sale_sale`;
+	select `1202-was_am`.`cash_sale_sale`.`IDCashSale` AS `IDCashSale`,`1202-was_am`.`cash_sale_sale`.`IDSale` AS `IDSale`,`1202-was_am`.`cash_sale_sale`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_sale_sale`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_sale_sale`.`Paid` AS `Paid`,`1202-was_am`.`cash_sale_sale`.`Discount` AS `Discount`,`1202-was_am`.`cash_sale_sale`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_sale_sale`;
 
 --
 -- Definition for view cash_sale_work
@@ -343,7 +343,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW cash_sale_work
 AS
-	select `1101-ban_dh`.`cash_sale_work`.`IDCashWork` AS `IDCashWork`,`1101-ban_dh`.`cash_sale_work`.`IDWork` AS `IDWork`,`1101-ban_dh`.`cash_sale_work`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`cash_sale_work`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`cash_sale_work`.`Discount` AS `Discount`,`1101-ban_dh`.`cash_sale_work`.`Paid` AS `Paid`,`1101-ban_dh`.`cash_sale_work`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`cash_sale_work`;
+	select `1202-was_am`.`cash_sale_work`.`IDCashWork` AS `IDCashWork`,`1202-was_am`.`cash_sale_work`.`IDWork` AS `IDWork`,`1202-was_am`.`cash_sale_work`.`IDCashier` AS `IDCashier`,`1202-was_am`.`cash_sale_work`.`IDPaid` AS `IDPaid`,`1202-was_am`.`cash_sale_work`.`Discount` AS `Discount`,`1202-was_am`.`cash_sale_work`.`Paid` AS `Paid`,`1202-was_am`.`cash_sale_work`.`UpdateID` AS `UpdateID` from `1202-was_am`.`cash_sale_work`;
 
 --
 -- Definition for view com_idmain
@@ -379,7 +379,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW com_value
 AS
-	select `1101-ban_dh`.`com_value`.`IDUser` AS `IDUser`,`1101-ban_dh`.`com_value`.`User` AS `User`,`1101-ban_dh`.`com_value`.`Company` AS `Company`,`1101-ban_dh`.`com_value`.`Company_Address` AS `Company_Address`,`1101-ban_dh`.`com_value`.`Lock` AS `Lock`,`1101-ban_dh`.`com_value`.`IDCustomer` AS `IDCustomer`,`1101-ban_dh`.`com_value`.`IDSale` AS `IDSale`,`1101-ban_dh`.`com_value`.`IDSaleCustomer` AS `IDSaleCustomer`,`1101-ban_dh`.`com_value`.`IDSaleSupplier` AS `IDSaleSupplier`,`1101-ban_dh`.`com_value`.`IDSalePurchase` AS `IDSalePurchase`,`1101-ban_dh`.`com_value`.`IDWork` AS `IDWork`,`1101-ban_dh`.`com_value`.`IDWorkSupplier` AS `IDWorkSupplier`,`1101-ban_dh`.`com_value`.`IDWorkDescrip` AS `IDWorkDescrip`,`1101-ban_dh`.`com_value`.`IDWorkCategory` AS `IDWorkCategory`,`1101-ban_dh`.`com_value`.`IDWorkPurchDescrip` AS `IDWorkPurchDescrip`,`1101-ban_dh`.`com_value`.`IDResources` AS `IDResources`,`1101-ban_dh`.`com_value`.`IDBulkSale` AS `IDBulkSale`,`1101-ban_dh`.`com_value`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`com_value`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`com_value`.`PreIDD` AS `PreIDD`,`1101-ban_dh`.`com_value`.`XRate` AS `XRate`,`1101-ban_dh`.`com_value`.`XFees` AS `XFees`,`1101-ban_dh`.`com_value`.`IDMonth` AS `IDMonth`,`1101-ban_dh`.`com_value`.`IDYear` AS `IDYear`,`1101-ban_dh`.`com_value`.`IDDailyDescrip` AS `IDDailyDescrip`,`1101-ban_dh`.`com_value`.`IDMonthlypaidDescrip` AS `IDMonthlypaidDescrip`,`1101-ban_dh`.`com_value`.`IDDailyCategory` AS `IDDailyCategory`,`1101-ban_dh`.`com_value`.`IDYearlyDescrip` AS `IDYearlyDescrip`,`1101-ban_dh`.`com_value`.`IDYearlyCategory` AS `IDYearlyCategory`,`1101-ban_dh`.`com_value`.`UpdateID` AS `UpdateID`,`1101-ban_dh`.`com_value`.`IDProductCategory` AS `IDProductCategory`,`1101-ban_dh`.`com_value`.`ProductCompany` AS `ProductCompany`,`1101-ban_dh`.`com_value`.`IDProduct` AS `IDProduct`,`1101-ban_dh`.`com_value`.`IDDFrom` AS `IDDFrom`,`1101-ban_dh`.`com_value`.`IDDTo` AS `IDDTo`,`1101-ban_dh`.`com_value`.`IDSupplier` AS `IDSupplier`,`1101-ban_dh`.`com_value`.`IDDepositDescrip` AS `IDDepositDescrip` from `1101-ban_dh`.`com_value`;
+	select `1202-was_am`.`com_value`.`IDUser` AS `IDUser`,`1202-was_am`.`com_value`.`User` AS `User`,`1202-was_am`.`com_value`.`Company` AS `Company`,`1202-was_am`.`com_value`.`Company_Address` AS `Company_Address`,`1202-was_am`.`com_value`.`Lock` AS `Lock`,`1202-was_am`.`com_value`.`IDCustomer` AS `IDCustomer`,`1202-was_am`.`com_value`.`IDSale` AS `IDSale`,`1202-was_am`.`com_value`.`IDSaleCustomer` AS `IDSaleCustomer`,`1202-was_am`.`com_value`.`IDSaleSupplier` AS `IDSaleSupplier`,`1202-was_am`.`com_value`.`IDSalePurchase` AS `IDSalePurchase`,`1202-was_am`.`com_value`.`IDWork` AS `IDWork`,`1202-was_am`.`com_value`.`IDWorkSupplier` AS `IDWorkSupplier`,`1202-was_am`.`com_value`.`IDWorkDescrip` AS `IDWorkDescrip`,`1202-was_am`.`com_value`.`IDWorkCategory` AS `IDWorkCategory`,`1202-was_am`.`com_value`.`IDWorkPurchDescrip` AS `IDWorkPurchDescrip`,`1202-was_am`.`com_value`.`IDResources` AS `IDResources`,`1202-was_am`.`com_value`.`IDBulkSale` AS `IDBulkSale`,`1202-was_am`.`com_value`.`IDCashier` AS `IDCashier`,`1202-was_am`.`com_value`.`IDPaid` AS `IDPaid`,`1202-was_am`.`com_value`.`PreIDD` AS `PreIDD`,`1202-was_am`.`com_value`.`XRate` AS `XRate`,`1202-was_am`.`com_value`.`XFees` AS `XFees`,`1202-was_am`.`com_value`.`IDMonth` AS `IDMonth`,`1202-was_am`.`com_value`.`IDYear` AS `IDYear`,`1202-was_am`.`com_value`.`IDDailyDescrip` AS `IDDailyDescrip`,`1202-was_am`.`com_value`.`IDMonthlypaidDescrip` AS `IDMonthlypaidDescrip`,`1202-was_am`.`com_value`.`IDDailyCategory` AS `IDDailyCategory`,`1202-was_am`.`com_value`.`IDYearlyDescrip` AS `IDYearlyDescrip`,`1202-was_am`.`com_value`.`IDYearlyCategory` AS `IDYearlyCategory`,`1202-was_am`.`com_value`.`UpdateID` AS `UpdateID`,`1202-was_am`.`com_value`.`IDProductCategory` AS `IDProductCategory`,`1202-was_am`.`com_value`.`ProductCompany` AS `ProductCompany`,`1202-was_am`.`com_value`.`IDProduct` AS `IDProduct`,`1202-was_am`.`com_value`.`IDDFrom` AS `IDDFrom`,`1202-was_am`.`com_value`.`IDDTo` AS `IDDTo`,`1202-was_am`.`com_value`.`IDSupplier` AS `IDSupplier`,`1202-was_am`.`com_value`.`IDDepositDescrip` AS `IDDepositDescrip` from `1202-was_am`.`com_value`;
 
 --
 -- Definition for view exp_daily
@@ -388,7 +388,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW exp_daily
 AS
-	select `1101-ban_dh`.`exp_daily`.`IDDaily` AS `IDDaily`,`1101-ban_dh`.`exp_daily`.`IDDate` AS `IDDate`,`1101-ban_dh`.`exp_daily`.`IDCategory` AS `IDCategory`,`1101-ban_dh`.`exp_daily`.`IDDescription` AS `IDDescription`,`1101-ban_dh`.`exp_daily`.`Qty` AS `Qty`,`1101-ban_dh`.`exp_daily`.`Amount` AS `Amount`,`1101-ban_dh`.`exp_daily`.`Paid` AS `Paid`,`1101-ban_dh`.`exp_daily`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`exp_daily`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`exp_daily`;
+	select `1202-was_am`.`exp_daily`.`IDDaily` AS `IDDaily`,`1202-was_am`.`exp_daily`.`IDDate` AS `IDDate`,`1202-was_am`.`exp_daily`.`IDCategory` AS `IDCategory`,`1202-was_am`.`exp_daily`.`IDDescription` AS `IDDescription`,`1202-was_am`.`exp_daily`.`Qty` AS `Qty`,`1202-was_am`.`exp_daily`.`Amount` AS `Amount`,`1202-was_am`.`exp_daily`.`Paid` AS `Paid`,`1202-was_am`.`exp_daily`.`IDCashier` AS `IDCashier`,`1202-was_am`.`exp_daily`.`UpdateID` AS `UpdateID` from `1202-was_am`.`exp_daily`;
 
 --
 -- Definition for view exp_daily_category
@@ -415,7 +415,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW exp_house
 AS
-	select `1101-ban_dh`.`exp_house`.`IDHouse` AS `IDHouse`,`1101-ban_dh`.`exp_house`.`IDDate` AS `IDDate`,`1101-ban_dh`.`exp_house`.`Description` AS `Description`,`1101-ban_dh`.`exp_house`.`FCurrency` AS `FCurrency`,`1101-ban_dh`.`exp_house`.`XRate` AS `XRate`,`1101-ban_dh`.`exp_house`.`XFees` AS `XFees`,`1101-ban_dh`.`exp_house`.`Amount` AS `Amount`,`1101-ban_dh`.`exp_house`.`Paid` AS `Paid`,`1101-ban_dh`.`exp_house`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`exp_house`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`exp_house`;
+	select `1202-was_am`.`exp_house`.`IDHouse` AS `IDHouse`,`1202-was_am`.`exp_house`.`IDDate` AS `IDDate`,`1202-was_am`.`exp_house`.`Description` AS `Description`,`1202-was_am`.`exp_house`.`FCurrency` AS `FCurrency`,`1202-was_am`.`exp_house`.`XRate` AS `XRate`,`1202-was_am`.`exp_house`.`XFees` AS `XFees`,`1202-was_am`.`exp_house`.`Amount` AS `Amount`,`1202-was_am`.`exp_house`.`Paid` AS `Paid`,`1202-was_am`.`exp_house`.`IDCashier` AS `IDCashier`,`1202-was_am`.`exp_house`.`UpdateID` AS `UpdateID` from `1202-was_am`.`exp_house`;
 
 --
 -- Definition for view exp_monthly
@@ -424,7 +424,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW exp_monthly
 AS
-	select `1101-ban_dh`.`exp_monthly`.`IDMonthly` AS `IDMonthly`,`1101-ban_dh`.`exp_monthly`.`IDResources` AS `IDResources`,`1101-ban_dh`.`exp_monthly`.`IDMonth` AS `IDMonth`,`1101-ban_dh`.`exp_monthly`.`IDDateF` AS `IDDateF`,`1101-ban_dh`.`exp_monthly`.`IDDateL` AS `IDDateL`,`1101-ban_dh`.`exp_monthly`.`Description` AS `Description`,`1101-ban_dh`.`exp_monthly`.`MExp` AS `MExp`,`1101-ban_dh`.`exp_monthly`.`Empl` AS `Empl`,`1101-ban_dh`.`exp_monthly`.`Salery` AS `Salery`,`1101-ban_dh`.`exp_monthly`.`Extra` AS `Extra`,`1101-ban_dh`.`exp_monthly`.`Total` AS `Total`,`1101-ban_dh`.`exp_monthly`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`exp_monthly`;
+	select `1202-was_am`.`exp_monthly`.`IDMonthly` AS `IDMonthly`,`1202-was_am`.`exp_monthly`.`IDResources` AS `IDResources`,`1202-was_am`.`exp_monthly`.`IDMonth` AS `IDMonth`,`1202-was_am`.`exp_monthly`.`IDDateF` AS `IDDateF`,`1202-was_am`.`exp_monthly`.`IDDateL` AS `IDDateL`,`1202-was_am`.`exp_monthly`.`Description` AS `Description`,`1202-was_am`.`exp_monthly`.`MExp` AS `MExp`,`1202-was_am`.`exp_monthly`.`Empl` AS `Empl`,`1202-was_am`.`exp_monthly`.`Salery` AS `Salery`,`1202-was_am`.`exp_monthly`.`Extra` AS `Extra`,`1202-was_am`.`exp_monthly`.`Total` AS `Total`,`1202-was_am`.`exp_monthly`.`UpdateID` AS `UpdateID` from `1202-was_am`.`exp_monthly`;
 
 --
 -- Definition for view exp_monthlypaid
@@ -433,7 +433,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW exp_monthlypaid
 AS
-	select `1101-ban_dh`.`exp_monthlypaid`.`IDMonthlyPaid` AS `IDMonthlyPaid`,`1101-ban_dh`.`exp_monthlypaid`.`IDResources` AS `IDResources`,`1101-ban_dh`.`exp_monthlypaid`.`IDDate` AS `IDDate`,`1101-ban_dh`.`exp_monthlypaid`.`IDMonth` AS `IDMonth`,`1101-ban_dh`.`exp_monthlypaid`.`IDDescription` AS `IDDescription`,`1101-ban_dh`.`exp_monthlypaid`.`FCurrency` AS `FCurrency`,`1101-ban_dh`.`exp_monthlypaid`.`XRate` AS `XRate`,`1101-ban_dh`.`exp_monthlypaid`.`XFees` AS `XFees`,`1101-ban_dh`.`exp_monthlypaid`.`Paid` AS `Paid`,`1101-ban_dh`.`exp_monthlypaid`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`exp_monthlypaid`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`exp_monthlypaid`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`exp_monthlypaid`;
+	select `1202-was_am`.`exp_monthlypaid`.`IDMonthlyPaid` AS `IDMonthlyPaid`,`1202-was_am`.`exp_monthlypaid`.`IDResources` AS `IDResources`,`1202-was_am`.`exp_monthlypaid`.`IDDate` AS `IDDate`,`1202-was_am`.`exp_monthlypaid`.`IDMonth` AS `IDMonth`,`1202-was_am`.`exp_monthlypaid`.`IDDescription` AS `IDDescription`,`1202-was_am`.`exp_monthlypaid`.`FCurrency` AS `FCurrency`,`1202-was_am`.`exp_monthlypaid`.`XRate` AS `XRate`,`1202-was_am`.`exp_monthlypaid`.`XFees` AS `XFees`,`1202-was_am`.`exp_monthlypaid`.`Paid` AS `Paid`,`1202-was_am`.`exp_monthlypaid`.`IDCashier` AS `IDCashier`,`1202-was_am`.`exp_monthlypaid`.`IDPaid` AS `IDPaid`,`1202-was_am`.`exp_monthlypaid`.`UpdateID` AS `UpdateID` from `1202-was_am`.`exp_monthlypaid`;
 
 --
 -- Definition for view exp_monthlypaid_desciption
@@ -451,7 +451,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW exp_yearly
 AS
-	select `1101-ban_dh`.`exp_yearly`.`IDYearly` AS `IDYearly`,`1101-ban_dh`.`exp_yearly`.`IDDate` AS `IDDate`,`1101-ban_dh`.`exp_yearly`.`IDYear` AS `IDYear`,`1101-ban_dh`.`exp_yearly`.`IDDescription` AS `IDDescription`,`1101-ban_dh`.`exp_yearly`.`IDCategory` AS `IDCategory`,`1101-ban_dh`.`exp_yearly`.`Qty` AS `Qty`,`1101-ban_dh`.`exp_yearly`.`Amount` AS `Amount`,`1101-ban_dh`.`exp_yearly`.`Paid` AS `Paid`,`1101-ban_dh`.`exp_yearly`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`exp_yearly`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`exp_yearly`;
+	select `1202-was_am`.`exp_yearly`.`IDYearly` AS `IDYearly`,`1202-was_am`.`exp_yearly`.`IDDate` AS `IDDate`,`1202-was_am`.`exp_yearly`.`IDYear` AS `IDYear`,`1202-was_am`.`exp_yearly`.`IDDescription` AS `IDDescription`,`1202-was_am`.`exp_yearly`.`IDCategory` AS `IDCategory`,`1202-was_am`.`exp_yearly`.`Qty` AS `Qty`,`1202-was_am`.`exp_yearly`.`Amount` AS `Amount`,`1202-was_am`.`exp_yearly`.`Paid` AS `Paid`,`1202-was_am`.`exp_yearly`.`IDCashier` AS `IDCashier`,`1202-was_am`.`exp_yearly`.`UpdateID` AS `UpdateID` from `1202-was_am`.`exp_yearly`;
 
 --
 -- Definition for view exp_yearly_category
@@ -478,7 +478,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW help
 AS
-	select `1101-ban_dh`.`help`.`ID` AS `ID`,`1101-ban_dh`.`help`.`Activity` AS `Activity`,`1101-ban_dh`.`help`.`Command` AS `Command`,`1101-ban_dh`.`help`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`help`;
+	select `1202-was_am`.`help`.`ID` AS `ID`,`1202-was_am`.`help`.`Activity` AS `Activity`,`1202-was_am`.`help`.`Command` AS `Command`,`1202-was_am`.`help`.`UpdateID` AS `UpdateID` from `1202-was_am`.`help`;
 
 --
 -- Definition for view open
@@ -487,7 +487,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW open
 AS
-	select `1101-ban_dh`.`open`.`ID` AS `ID`,`1101-ban_dh`.`open`.`Open` AS `Open`,`1101-ban_dh`.`open`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`open`;
+	select `1202-was_am`.`open`.`ID` AS `ID`,`1202-was_am`.`open`.`Open` AS `Open`,`1202-was_am`.`open`.`UpdateID` AS `UpdateID` from `1202-was_am`.`open`;
 
 --
 -- Definition for view prod_category
@@ -505,7 +505,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW prod_damage
 AS
-	select `1101-ban_dh`.`prod_damage`.`IDDamage` AS `IDDamage`,`1101-ban_dh`.`prod_damage`.`IDDate` AS `IDDate`,`1101-ban_dh`.`prod_damage`.`IDProduct` AS `IDProduct`,`1101-ban_dh`.`prod_damage`.`Qty` AS `Qty`,`1101-ban_dh`.`prod_damage`.`P_Rate` AS `P_Rate`,`1101-ban_dh`.`prod_damage`.`Amount` AS `Amount`,`1101-ban_dh`.`prod_damage`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`prod_damage`;
+	select `1202-was_am`.`prod_damage`.`IDDamage` AS `IDDamage`,`1202-was_am`.`prod_damage`.`IDDate` AS `IDDate`,`1202-was_am`.`prod_damage`.`IDProduct` AS `IDProduct`,`1202-was_am`.`prod_damage`.`Qty` AS `Qty`,`1202-was_am`.`prod_damage`.`P_Rate` AS `P_Rate`,`1202-was_am`.`prod_damage`.`Amount` AS `Amount`,`1202-was_am`.`prod_damage`.`UpdateID` AS `UpdateID` from `1202-was_am`.`prod_damage`;
 
 --
 -- Definition for view prod_image
@@ -532,7 +532,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW purch_bulksale_purchase
 AS
-	select `1101-ban_dh`.`purch_bulksale_purchase`.`IDBulkPurchase` AS `IDBulkPurchase`,`1101-ban_dh`.`purch_bulksale_purchase`.`IDSupplier` AS `IDSupplier`,`1101-ban_dh`.`purch_bulksale_purchase`.`Description` AS `Description`,`1101-ban_dh`.`purch_bulksale_purchase`.`IDDate` AS `IDDate`,`1101-ban_dh`.`purch_bulksale_purchase`.`Bill_No` AS `Bill_No`,`1101-ban_dh`.`purch_bulksale_purchase`.`Parts` AS `Parts`,`1101-ban_dh`.`purch_bulksale_purchase`.`Amount` AS `Amount`,`1101-ban_dh`.`purch_bulksale_purchase`.`Discount` AS `Discount`,`1101-ban_dh`.`purch_bulksale_purchase`.`Paid` AS `Paid`,`1101-ban_dh`.`purch_bulksale_purchase`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`purch_bulksale_purchase`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`purch_bulksale_purchase`.`OP` AS `OP`,`1101-ban_dh`.`purch_bulksale_purchase`.`St` AS `St`,`1101-ban_dh`.`purch_bulksale_purchase`.`RT` AS `RT`,`1101-ban_dh`.`purch_bulksale_purchase`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`purch_bulksale_purchase`;
+	select `1202-was_am`.`purch_bulksale_purchase`.`IDBulkPurchase` AS `IDBulkPurchase`,`1202-was_am`.`purch_bulksale_purchase`.`IDSupplier` AS `IDSupplier`,`1202-was_am`.`purch_bulksale_purchase`.`Description` AS `Description`,`1202-was_am`.`purch_bulksale_purchase`.`IDDate` AS `IDDate`,`1202-was_am`.`purch_bulksale_purchase`.`Bill_No` AS `Bill_No`,`1202-was_am`.`purch_bulksale_purchase`.`Parts` AS `Parts`,`1202-was_am`.`purch_bulksale_purchase`.`Amount` AS `Amount`,`1202-was_am`.`purch_bulksale_purchase`.`Discount` AS `Discount`,`1202-was_am`.`purch_bulksale_purchase`.`Paid` AS `Paid`,`1202-was_am`.`purch_bulksale_purchase`.`IDPaid` AS `IDPaid`,`1202-was_am`.`purch_bulksale_purchase`.`IDCashier` AS `IDCashier`,`1202-was_am`.`purch_bulksale_purchase`.`OP` AS `OP`,`1202-was_am`.`purch_bulksale_purchase`.`St` AS `St`,`1202-was_am`.`purch_bulksale_purchase`.`RT` AS `RT`,`1202-was_am`.`purch_bulksale_purchase`.`UpdateID` AS `UpdateID` from `1202-was_am`.`purch_bulksale_purchase`;
 
 --
 -- Definition for view purch_order
@@ -541,7 +541,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW purch_order
 AS
-	select `1101-ban_dh`.`purch_order`.`IDOrder` AS `IDOrder`,`1101-ban_dh`.`purch_order`.`IDSupplier` AS `IDSupplier`,`1101-ban_dh`.`purch_order`.`IDDate` AS `IDDate`,`1101-ban_dh`.`purch_order`.`Amount` AS `Amount`,`1101-ban_dh`.`purch_order`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`purch_order`.`St` AS `St`,`1101-ban_dh`.`purch_order`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`purch_order`;
+	select `1202-was_am`.`purch_order`.`IDOrder` AS `IDOrder`,`1202-was_am`.`purch_order`.`IDSupplier` AS `IDSupplier`,`1202-was_am`.`purch_order`.`IDDate` AS `IDDate`,`1202-was_am`.`purch_order`.`Amount` AS `Amount`,`1202-was_am`.`purch_order`.`IDCashier` AS `IDCashier`,`1202-was_am`.`purch_order`.`St` AS `St`,`1202-was_am`.`purch_order`.`UpdateID` AS `UpdateID` from `1202-was_am`.`purch_order`;
 
 --
 -- Definition for view purch_ordersub
@@ -550,7 +550,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW purch_ordersub
 AS
-	select `1101-ban_dh`.`purch_ordersub`.`IDOrderSub` AS `IDOrderSub`,`1101-ban_dh`.`purch_ordersub`.`IDOrder` AS `IDOrder`,`1101-ban_dh`.`purch_ordersub`.`IDProduct` AS `IDProduct`,`1101-ban_dh`.`purch_ordersub`.`B_Rate` AS `B_Rate`,`1101-ban_dh`.`purch_ordersub`.`B_Qty` AS `B_Qty`,`1101-ban_dh`.`purch_ordersub`.`Qty_Type` AS `Qty_Type`,`1101-ban_dh`.`purch_ordersub`.`Amount` AS `Amount`,`1101-ban_dh`.`purch_ordersub`.`PU_Qty` AS `PU_Qty`,`1101-ban_dh`.`purch_ordersub`.`PU_Rate` AS `PU_Rate`,`1101-ban_dh`.`purch_ordersub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`purch_ordersub`;
+	select `1202-was_am`.`purch_ordersub`.`IDOrderSub` AS `IDOrderSub`,`1202-was_am`.`purch_ordersub`.`IDOrder` AS `IDOrder`,`1202-was_am`.`purch_ordersub`.`IDProduct` AS `IDProduct`,`1202-was_am`.`purch_ordersub`.`B_Rate` AS `B_Rate`,`1202-was_am`.`purch_ordersub`.`B_Qty` AS `B_Qty`,`1202-was_am`.`purch_ordersub`.`Qty_Type` AS `Qty_Type`,`1202-was_am`.`purch_ordersub`.`Amount` AS `Amount`,`1202-was_am`.`purch_ordersub`.`PU_Qty` AS `PU_Qty`,`1202-was_am`.`purch_ordersub`.`PU_Rate` AS `PU_Rate`,`1202-was_am`.`purch_ordersub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`purch_ordersub`;
 
 --
 -- Definition for view purch_sale_purchase
@@ -559,7 +559,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW purch_sale_purchase
 AS
-	select `1101-ban_dh`.`purch_sale_purchase`.`IDSalePurchase` AS `IDSalePurchase`,`1101-ban_dh`.`purch_sale_purchase`.`IDSupplier` AS `IDSupplier`,`1101-ban_dh`.`purch_sale_purchase`.`Description` AS `Description`,`1101-ban_dh`.`purch_sale_purchase`.`IDDate` AS `IDDate`,`1101-ban_dh`.`purch_sale_purchase`.`Bill_No` AS `Bill_No`,`1101-ban_dh`.`purch_sale_purchase`.`Parts` AS `Parts`,`1101-ban_dh`.`purch_sale_purchase`.`TAM` AS `TAM`,`1101-ban_dh`.`purch_sale_purchase`.`Amount` AS `Amount`,`1101-ban_dh`.`purch_sale_purchase`.`Discount` AS `Discount`,`1101-ban_dh`.`purch_sale_purchase`.`Paid` AS `Paid`,`1101-ban_dh`.`purch_sale_purchase`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`purch_sale_purchase`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`purch_sale_purchase`.`OP` AS `OP`,`1101-ban_dh`.`purch_sale_purchase`.`St` AS `St`,`1101-ban_dh`.`purch_sale_purchase`.`RT` AS `RT`,`1101-ban_dh`.`purch_sale_purchase`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`purch_sale_purchase`;
+	select `1202-was_am`.`purch_sale_purchase`.`IDSalePurchase` AS `IDSalePurchase`,`1202-was_am`.`purch_sale_purchase`.`IDSupplier` AS `IDSupplier`,`1202-was_am`.`purch_sale_purchase`.`Description` AS `Description`,`1202-was_am`.`purch_sale_purchase`.`IDDate` AS `IDDate`,`1202-was_am`.`purch_sale_purchase`.`Bill_No` AS `Bill_No`,`1202-was_am`.`purch_sale_purchase`.`Parts` AS `Parts`,`1202-was_am`.`purch_sale_purchase`.`TAM` AS `TAM`,`1202-was_am`.`purch_sale_purchase`.`Amount` AS `Amount`,`1202-was_am`.`purch_sale_purchase`.`Discount` AS `Discount`,`1202-was_am`.`purch_sale_purchase`.`Paid` AS `Paid`,`1202-was_am`.`purch_sale_purchase`.`IDPaid` AS `IDPaid`,`1202-was_am`.`purch_sale_purchase`.`IDCashier` AS `IDCashier`,`1202-was_am`.`purch_sale_purchase`.`OP` AS `OP`,`1202-was_am`.`purch_sale_purchase`.`St` AS `St`,`1202-was_am`.`purch_sale_purchase`.`RT` AS `RT`,`1202-was_am`.`purch_sale_purchase`.`UpdateID` AS `UpdateID` from `1202-was_am`.`purch_sale_purchase`;
 
 --
 -- Definition for view purch_sale_purchasesub
@@ -568,7 +568,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW purch_sale_purchasesub
 AS
-	select `1101-ban_dh`.`purch_sale_purchasesub`.`IDSalePurchaseSub` AS `IDSalePurchaseSub`,`1101-ban_dh`.`purch_sale_purchasesub`.`IDSalePurchase` AS `IDSalePurchase`,`1101-ban_dh`.`purch_sale_purchasesub`.`IDProduct` AS `IDProduct`,`1101-ban_dh`.`purch_sale_purchasesub`.`IN_Box` AS `IN_Box`,`1101-ban_dh`.`purch_sale_purchasesub`.`PB_Qty` AS `PB_Qty`,`1101-ban_dh`.`purch_sale_purchasesub`.`PB_Rate` AS `PB_Rate`,`1101-ban_dh`.`purch_sale_purchasesub`.`Amount` AS `Amount`,`1101-ban_dh`.`purch_sale_purchasesub`.`PU_Qty` AS `PU_Qty`,`1101-ban_dh`.`purch_sale_purchasesub`.`PU_Rate` AS `PU_Rate`,`1101-ban_dh`.`purch_sale_purchasesub`.`SU_Rate` AS `SU_Rate`,`1101-ban_dh`.`purch_sale_purchasesub`.`SB_Rate` AS `SB_Rate`,`1101-ban_dh`.`purch_sale_purchasesub`.`Ret_Qty` AS `Ret_Qty`,`1101-ban_dh`.`purch_sale_purchasesub`.`FOC` AS `FOC`,`1101-ban_dh`.`purch_sale_purchasesub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`purch_sale_purchasesub`;
+	select `1202-was_am`.`purch_sale_purchasesub`.`IDSalePurchaseSub` AS `IDSalePurchaseSub`,`1202-was_am`.`purch_sale_purchasesub`.`IDSalePurchase` AS `IDSalePurchase`,`1202-was_am`.`purch_sale_purchasesub`.`IDProduct` AS `IDProduct`,`1202-was_am`.`purch_sale_purchasesub`.`IN_Box` AS `IN_Box`,`1202-was_am`.`purch_sale_purchasesub`.`PB_Qty` AS `PB_Qty`,`1202-was_am`.`purch_sale_purchasesub`.`PB_Rate` AS `PB_Rate`,`1202-was_am`.`purch_sale_purchasesub`.`Amount` AS `Amount`,`1202-was_am`.`purch_sale_purchasesub`.`PU_Qty` AS `PU_Qty`,`1202-was_am`.`purch_sale_purchasesub`.`PU_Rate` AS `PU_Rate`,`1202-was_am`.`purch_sale_purchasesub`.`SU_Rate` AS `SU_Rate`,`1202-was_am`.`purch_sale_purchasesub`.`SB_Rate` AS `SB_Rate`,`1202-was_am`.`purch_sale_purchasesub`.`Ret_Qty` AS `Ret_Qty`,`1202-was_am`.`purch_sale_purchasesub`.`FOC` AS `FOC`,`1202-was_am`.`purch_sale_purchasesub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`purch_sale_purchasesub`;
 
 --
 -- Definition for view purch_sale_suppliers
@@ -586,7 +586,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW purch_work_purchase
 AS
-	select `1101-ban_dh`.`purch_work_purchase`.`IDWorkPurchase` AS `IDWorkPurchase`,`1101-ban_dh`.`purch_work_purchase`.`IDSupplier` AS `IDSupplier`,`1101-ban_dh`.`purch_work_purchase`.`IDDescription` AS `IDDescription`,`1101-ban_dh`.`purch_work_purchase`.`IDDate` AS `IDDate`,`1101-ban_dh`.`purch_work_purchase`.`Bill_No` AS `Bill_No`,`1101-ban_dh`.`purch_work_purchase`.`Parts` AS `Parts`,`1101-ban_dh`.`purch_work_purchase`.`Amount` AS `Amount`,`1101-ban_dh`.`purch_work_purchase`.`Discount` AS `Discount`,`1101-ban_dh`.`purch_work_purchase`.`Paid` AS `Paid`,`1101-ban_dh`.`purch_work_purchase`.`IDPaid` AS `IDPaid`,`1101-ban_dh`.`purch_work_purchase`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`purch_work_purchase`.`OP` AS `OP`,`1101-ban_dh`.`purch_work_purchase`.`St` AS `St`,`1101-ban_dh`.`purch_work_purchase`.`RT` AS `RT`,`1101-ban_dh`.`purch_work_purchase`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`purch_work_purchase`;
+	select `1202-was_am`.`purch_work_purchase`.`IDWorkPurchase` AS `IDWorkPurchase`,`1202-was_am`.`purch_work_purchase`.`IDSupplier` AS `IDSupplier`,`1202-was_am`.`purch_work_purchase`.`IDDescription` AS `IDDescription`,`1202-was_am`.`purch_work_purchase`.`IDDate` AS `IDDate`,`1202-was_am`.`purch_work_purchase`.`Bill_No` AS `Bill_No`,`1202-was_am`.`purch_work_purchase`.`Parts` AS `Parts`,`1202-was_am`.`purch_work_purchase`.`Amount` AS `Amount`,`1202-was_am`.`purch_work_purchase`.`Discount` AS `Discount`,`1202-was_am`.`purch_work_purchase`.`Paid` AS `Paid`,`1202-was_am`.`purch_work_purchase`.`IDPaid` AS `IDPaid`,`1202-was_am`.`purch_work_purchase`.`IDCashier` AS `IDCashier`,`1202-was_am`.`purch_work_purchase`.`OP` AS `OP`,`1202-was_am`.`purch_work_purchase`.`St` AS `St`,`1202-was_am`.`purch_work_purchase`.`RT` AS `RT`,`1202-was_am`.`purch_work_purchase`.`UpdateID` AS `UpdateID` from `1202-was_am`.`purch_work_purchase`;
 
 --
 -- Definition for view purch_work_purchase_desciption
@@ -613,7 +613,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW reso_resources
 AS
-	select `1101-ban_dh`.`reso_resources`.`IDResources` AS `IDResources`,`1101-ban_dh`.`reso_resources`.`IDResoName` AS `IDResoName`,`1101-ban_dh`.`reso_resources`.`Salery` AS `Salery`,`1101-ban_dh`.`reso_resources`.`Casher` AS `Casher`,`1101-ban_dh`.`reso_resources`.`Allow Paid` AS `Allow Paid`,`1101-ban_dh`.`reso_resources`.`Depositor` AS `Depositor`,`1101-ban_dh`.`reso_resources`.`Investor` AS `Investor`,`1101-ban_dh`.`reso_resources`.`MExp` AS `MExp`,`1101-ban_dh`.`reso_resources`.`Employee` AS `Employee`,`1101-ban_dh`.`reso_resources`.`Partner` AS `Partner`,`1101-ban_dh`.`reso_resources`.`Partnership` AS `Partnership`,`1101-ban_dh`.`reso_resources`.`Password` AS `Password`,`1101-ban_dh`.`reso_resources`.`UpdateID` AS `UpdateID`,`1101-ban_dh`.`reso_resources`.`Lock` AS `Lock` from `1101-ban_dh`.`reso_resources`;
+	select `1202-was_am`.`reso_resources`.`IDResources` AS `IDResources`,`1202-was_am`.`reso_resources`.`IDResoName` AS `IDResoName`,`1202-was_am`.`reso_resources`.`Salery` AS `Salery`,`1202-was_am`.`reso_resources`.`Casher` AS `Casher`,`1202-was_am`.`reso_resources`.`Allow Paid` AS `Allow Paid`,`1202-was_am`.`reso_resources`.`Depositor` AS `Depositor`,`1202-was_am`.`reso_resources`.`Investor` AS `Investor`,`1202-was_am`.`reso_resources`.`MExp` AS `MExp`,`1202-was_am`.`reso_resources`.`Employee` AS `Employee`,`1202-was_am`.`reso_resources`.`Partner` AS `Partner`,`1202-was_am`.`reso_resources`.`Partnership` AS `Partnership`,`1202-was_am`.`reso_resources`.`Password` AS `Password`,`1202-was_am`.`reso_resources`.`UpdateID` AS `UpdateID`,`1202-was_am`.`reso_resources`.`Lock` AS `Lock` from `1202-was_am`.`reso_resources`;
 
 --
 -- Definition for view reso_resources_names
@@ -631,7 +631,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_bulksale
 AS
-	select `1101-ban_dh`.`sale_bulksale`.`IDBulkSale` AS `IDBulkSale`,`1101-ban_dh`.`sale_bulksale`.`IDCustomer` AS `IDCustomer`,`1101-ban_dh`.`sale_bulksale`.`IDDate` AS `IDDate`,`1101-ban_dh`.`sale_bulksale`.`Description` AS `Description`,`1101-ban_dh`.`sale_bulksale`.`SAmount` AS `SAmount`,`1101-ban_dh`.`sale_bulksale`.`Discount` AS `Discount`,`1101-ban_dh`.`sale_bulksale`.`Paid` AS `Paid`,`1101-ban_dh`.`sale_bulksale`.`CounterSale` AS `CounterSale`,`1101-ban_dh`.`sale_bulksale`.`Cash` AS `Cash`,`1101-ban_dh`.`sale_bulksale`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`sale_bulksale`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_bulksale`;
+	select `1202-was_am`.`sale_bulksale`.`IDBulkSale` AS `IDBulkSale`,`1202-was_am`.`sale_bulksale`.`IDCustomer` AS `IDCustomer`,`1202-was_am`.`sale_bulksale`.`IDDate` AS `IDDate`,`1202-was_am`.`sale_bulksale`.`Description` AS `Description`,`1202-was_am`.`sale_bulksale`.`SAmount` AS `SAmount`,`1202-was_am`.`sale_bulksale`.`Discount` AS `Discount`,`1202-was_am`.`sale_bulksale`.`Paid` AS `Paid`,`1202-was_am`.`sale_bulksale`.`CounterSale` AS `CounterSale`,`1202-was_am`.`sale_bulksale`.`Cash` AS `Cash`,`1202-was_am`.`sale_bulksale`.`IDCashier` AS `IDCashier`,`1202-was_am`.`sale_bulksale`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_bulksale`;
 
 --
 -- Definition for view sale_counter
@@ -640,7 +640,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_counter
 AS
-	select `1101-ban_dh`.`sale_counter`.`IDCounter` AS `IDCounter`,`1101-ban_dh`.`sale_counter`.`IDDate` AS `IDDate`,`1101-ban_dh`.`sale_counter`.`CounterCash` AS `CounterCash`,`1101-ban_dh`.`sale_counter`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_counter`;
+	select `1202-was_am`.`sale_counter`.`IDCounter` AS `IDCounter`,`1202-was_am`.`sale_counter`.`IDDate` AS `IDDate`,`1202-was_am`.`sale_counter`.`CounterCash` AS `CounterCash`,`1202-was_am`.`sale_counter`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_counter`;
 
 --
 -- Definition for view sale_customer
@@ -658,7 +658,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_sale
 AS
-	select `1101-ban_dh`.`sale_sale`.`IDSale` AS `IDSale`,`1101-ban_dh`.`sale_sale`.`IDCustomer` AS `IDCustomer`,`1101-ban_dh`.`sale_sale`.`IDDate` AS `IDDate`,`1101-ban_dh`.`sale_sale`.`TAM` AS `TAM`,`1101-ban_dh`.`sale_sale`.`SAmount` AS `SAmount`,`1101-ban_dh`.`sale_sale`.`Discount` AS `Discount`,`1101-ban_dh`.`sale_sale`.`Paid` AS `Paid`,`1101-ban_dh`.`sale_sale`.`PAmount` AS `PAmount`,`1101-ban_dh`.`sale_sale`.`Cash` AS `Cash`,`1101-ban_dh`.`sale_sale`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`sale_sale`.`OP` AS `OP`,`1101-ban_dh`.`sale_sale`.`St` AS `St`,`1101-ban_dh`.`sale_sale`.`RT` AS `RT`,`1101-ban_dh`.`sale_sale`.`Atent` AS `Atent`,`1101-ban_dh`.`sale_sale`.`Finish` AS `Finish`,`1101-ban_dh`.`sale_sale`.`Pending` AS `Pending`,`1101-ban_dh`.`sale_sale`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_sale`;
+	select `1202-was_am`.`sale_sale`.`IDSale` AS `IDSale`,`1202-was_am`.`sale_sale`.`IDCustomer` AS `IDCustomer`,`1202-was_am`.`sale_sale`.`IDDate` AS `IDDate`,`1202-was_am`.`sale_sale`.`TAM` AS `TAM`,`1202-was_am`.`sale_sale`.`SAmount` AS `SAmount`,`1202-was_am`.`sale_sale`.`Discount` AS `Discount`,`1202-was_am`.`sale_sale`.`Paid` AS `Paid`,`1202-was_am`.`sale_sale`.`PAmount` AS `PAmount`,`1202-was_am`.`sale_sale`.`Cash` AS `Cash`,`1202-was_am`.`sale_sale`.`IDCashier` AS `IDCashier`,`1202-was_am`.`sale_sale`.`OP` AS `OP`,`1202-was_am`.`sale_sale`.`St` AS `St`,`1202-was_am`.`sale_sale`.`RT` AS `RT`,`1202-was_am`.`sale_sale`.`Atent` AS `Atent`,`1202-was_am`.`sale_sale`.`Finish` AS `Finish`,`1202-was_am`.`sale_sale`.`Pending` AS `Pending`,`1202-was_am`.`sale_sale`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_sale`;
 
 --
 -- Definition for view sale_salesub
@@ -667,7 +667,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_salesub
 AS
-	select `1101-ban_dh`.`sale_salesub`.`IDSaleSub` AS `IDSaleSub`,`1101-ban_dh`.`sale_salesub`.`IDSale` AS `IDSale`,`1101-ban_dh`.`sale_salesub`.`IDProduct` AS `IDProduct`,`1101-ban_dh`.`sale_salesub`.`Qty` AS `Qty`,`1101-ban_dh`.`sale_salesub`.`Rate` AS `Rate`,`1101-ban_dh`.`sale_salesub`.`Amount` AS `Amount`,`1101-ban_dh`.`sale_salesub`.`PAmount` AS `PAmount`,`1101-ban_dh`.`sale_salesub`.`R_Qty` AS `R_Qty`,`1101-ban_dh`.`sale_salesub`.`H_Qty` AS `H_Qty`,`1101-ban_dh`.`sale_salesub`.`Ret_Qty` AS `Ret_Qty`,`1101-ban_dh`.`sale_salesub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_salesub`;
+	select `1202-was_am`.`sale_salesub`.`IDSaleSub` AS `IDSaleSub`,`1202-was_am`.`sale_salesub`.`IDSale` AS `IDSale`,`1202-was_am`.`sale_salesub`.`IDProduct` AS `IDProduct`,`1202-was_am`.`sale_salesub`.`Qty` AS `Qty`,`1202-was_am`.`sale_salesub`.`Rate` AS `Rate`,`1202-was_am`.`sale_salesub`.`Amount` AS `Amount`,`1202-was_am`.`sale_salesub`.`PAmount` AS `PAmount`,`1202-was_am`.`sale_salesub`.`R_Qty` AS `R_Qty`,`1202-was_am`.`sale_salesub`.`H_Qty` AS `H_Qty`,`1202-was_am`.`sale_salesub`.`Ret_Qty` AS `Ret_Qty`,`1202-was_am`.`sale_salesub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_salesub`;
 
 --
 -- Definition for view sale_tempsale
@@ -676,7 +676,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_tempsale
 AS
-	select `1101-ban_dh`.`sale_tempsale`.`IDSale` AS `IDSale`,`1101-ban_dh`.`sale_tempsale`.`IDCustomer` AS `IDCustomer`,`1101-ban_dh`.`sale_tempsale`.`IDDate` AS `IDDate`,`1101-ban_dh`.`sale_tempsale`.`TAM` AS `TAM`,`1101-ban_dh`.`sale_tempsale`.`SAmount` AS `SAmount`,`1101-ban_dh`.`sale_tempsale`.`Discount` AS `Discount`,`1101-ban_dh`.`sale_tempsale`.`Paid` AS `Paid`,`1101-ban_dh`.`sale_tempsale`.`PAmount` AS `PAmount`,`1101-ban_dh`.`sale_tempsale`.`Cash` AS `Cash`,`1101-ban_dh`.`sale_tempsale`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`sale_tempsale`.`OP` AS `OP`,`1101-ban_dh`.`sale_tempsale`.`St` AS `St`,`1101-ban_dh`.`sale_tempsale`.`RT` AS `RT`,`1101-ban_dh`.`sale_tempsale`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_tempsale`;
+	select `1202-was_am`.`sale_tempsale`.`IDSale` AS `IDSale`,`1202-was_am`.`sale_tempsale`.`IDCustomer` AS `IDCustomer`,`1202-was_am`.`sale_tempsale`.`IDDate` AS `IDDate`,`1202-was_am`.`sale_tempsale`.`TAM` AS `TAM`,`1202-was_am`.`sale_tempsale`.`SAmount` AS `SAmount`,`1202-was_am`.`sale_tempsale`.`Discount` AS `Discount`,`1202-was_am`.`sale_tempsale`.`Paid` AS `Paid`,`1202-was_am`.`sale_tempsale`.`PAmount` AS `PAmount`,`1202-was_am`.`sale_tempsale`.`Cash` AS `Cash`,`1202-was_am`.`sale_tempsale`.`IDCashier` AS `IDCashier`,`1202-was_am`.`sale_tempsale`.`OP` AS `OP`,`1202-was_am`.`sale_tempsale`.`St` AS `St`,`1202-was_am`.`sale_tempsale`.`RT` AS `RT`,`1202-was_am`.`sale_tempsale`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_tempsale`;
 
 --
 -- Definition for view sale_tempsalesub
@@ -685,7 +685,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_tempsalesub
 AS
-	select `1101-ban_dh`.`sale_tempsalesub`.`IDSaleSub` AS `IDSaleSub`,`1101-ban_dh`.`sale_tempsalesub`.`IDSale` AS `IDSale`,`1101-ban_dh`.`sale_tempsalesub`.`IDProduct` AS `IDProduct`,`1101-ban_dh`.`sale_tempsalesub`.`Qty` AS `Qty`,`1101-ban_dh`.`sale_tempsalesub`.`Rate` AS `Rate`,`1101-ban_dh`.`sale_tempsalesub`.`Amount` AS `Amount`,`1101-ban_dh`.`sale_tempsalesub`.`PAmount` AS `PAmount`,`1101-ban_dh`.`sale_tempsalesub`.`R_Qty` AS `R_Qty`,`1101-ban_dh`.`sale_tempsalesub`.`H_Qty` AS `H_Qty`,`1101-ban_dh`.`sale_tempsalesub`.`Ret_Qty` AS `Ret_Qty`,`1101-ban_dh`.`sale_tempsalesub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_tempsalesub`;
+	select `1202-was_am`.`sale_tempsalesub`.`IDSaleSub` AS `IDSaleSub`,`1202-was_am`.`sale_tempsalesub`.`IDSale` AS `IDSale`,`1202-was_am`.`sale_tempsalesub`.`IDProduct` AS `IDProduct`,`1202-was_am`.`sale_tempsalesub`.`Qty` AS `Qty`,`1202-was_am`.`sale_tempsalesub`.`Rate` AS `Rate`,`1202-was_am`.`sale_tempsalesub`.`Amount` AS `Amount`,`1202-was_am`.`sale_tempsalesub`.`PAmount` AS `PAmount`,`1202-was_am`.`sale_tempsalesub`.`R_Qty` AS `R_Qty`,`1202-was_am`.`sale_tempsalesub`.`H_Qty` AS `H_Qty`,`1202-was_am`.`sale_tempsalesub`.`Ret_Qty` AS `Ret_Qty`,`1202-was_am`.`sale_tempsalesub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_tempsalesub`;
 
 --
 -- Definition for view sale_work
@@ -694,7 +694,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_work
 AS
-	select `1101-ban_dh`.`sale_work`.`IDWork` AS `IDWork`,`1101-ban_dh`.`sale_work`.`IDCustomer` AS `IDCustomer`,`1101-ban_dh`.`sale_work`.`IDDate` AS `IDDate`,`1101-ban_dh`.`sale_work`.`SAmount` AS `SAmount`,`1101-ban_dh`.`sale_work`.`Discount` AS `Discount`,`1101-ban_dh`.`sale_work`.`Paid` AS `Paid`,`1101-ban_dh`.`sale_work`.`PAmount` AS `PAmount`,`1101-ban_dh`.`sale_work`.`Cash` AS `Cash`,`1101-ban_dh`.`sale_work`.`IDCashier` AS `IDCashier`,`1101-ban_dh`.`sale_work`.`OP` AS `OP`,`1101-ban_dh`.`sale_work`.`St` AS `St`,`1101-ban_dh`.`sale_work`.`RT` AS `RT`,`1101-ban_dh`.`sale_work`.`Atent` AS `Atent`,`1101-ban_dh`.`sale_work`.`Finish` AS `Finish`,`1101-ban_dh`.`sale_work`.`Pending` AS `Pending`,`1101-ban_dh`.`sale_work`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_work`;
+	select `1202-was_am`.`sale_work`.`IDWork` AS `IDWork`,`1202-was_am`.`sale_work`.`IDCustomer` AS `IDCustomer`,`1202-was_am`.`sale_work`.`IDDate` AS `IDDate`,`1202-was_am`.`sale_work`.`SAmount` AS `SAmount`,`1202-was_am`.`sale_work`.`Discount` AS `Discount`,`1202-was_am`.`sale_work`.`Paid` AS `Paid`,`1202-was_am`.`sale_work`.`PAmount` AS `PAmount`,`1202-was_am`.`sale_work`.`Cash` AS `Cash`,`1202-was_am`.`sale_work`.`IDCashier` AS `IDCashier`,`1202-was_am`.`sale_work`.`OP` AS `OP`,`1202-was_am`.`sale_work`.`St` AS `St`,`1202-was_am`.`sale_work`.`RT` AS `RT`,`1202-was_am`.`sale_work`.`Atent` AS `Atent`,`1202-was_am`.`sale_work`.`Finish` AS `Finish`,`1202-was_am`.`sale_work`.`Pending` AS `Pending`,`1202-was_am`.`sale_work`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_work`;
 
 --
 -- Definition for view sale_work_category
@@ -721,7 +721,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW sale_worksub
 AS
-	select `1101-ban_dh`.`sale_worksub`.`IDWorkSub` AS `IDWorkSub`,`1101-ban_dh`.`sale_worksub`.`IDWork` AS `IDWork`,`1101-ban_dh`.`sale_worksub`.`IDCategory` AS `IDCategory`,`1101-ban_dh`.`sale_worksub`.`IDDescription` AS `IDDescription`,`1101-ban_dh`.`sale_worksub`.`Qty` AS `Qty`,`1101-ban_dh`.`sale_worksub`.`Amount` AS `Amount`,`1101-ban_dh`.`sale_worksub`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`sale_worksub`;
+	select `1202-was_am`.`sale_worksub`.`IDWorkSub` AS `IDWorkSub`,`1202-was_am`.`sale_worksub`.`IDWork` AS `IDWork`,`1202-was_am`.`sale_worksub`.`IDCategory` AS `IDCategory`,`1202-was_am`.`sale_worksub`.`IDDescription` AS `IDDescription`,`1202-was_am`.`sale_worksub`.`Qty` AS `Qty`,`1202-was_am`.`sale_worksub`.`Amount` AS `Amount`,`1202-was_am`.`sale_worksub`.`UpdateID` AS `UpdateID` from `1202-was_am`.`sale_worksub`;
 
 --
 -- Definition for view switchboard
@@ -730,7 +730,7 @@ CREATE OR REPLACE
 	DEFINER = 'root'@'localhost'
 VIEW switchboard
 AS
-	select `1101-ban_dh`.`switchboard`.`SwitchboardID` AS `SwitchboardID`,`1101-ban_dh`.`switchboard`.`ItemText` AS `ItemText`,`1101-ban_dh`.`switchboard`.`Open` AS `Open`,`1101-ban_dh`.`switchboard`.`UpdateID` AS `UpdateID` from `1101-ban_dh`.`switchboard`;
+	select `1202-was_am`.`switchboard`.`SwitchboardID` AS `SwitchboardID`,`1202-was_am`.`switchboard`.`ItemText` AS `ItemText`,`1202-was_am`.`switchboard`.`Open` AS `Open`,`1202-was_am`.`switchboard`.`UpdateID` AS `UpdateID` from `1202-was_am`.`switchboard`;
 
 --
 -- Definition for view _casher
